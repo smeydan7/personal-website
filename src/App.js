@@ -24,6 +24,9 @@ function App() {
           Whether it’s collaborating on cross-functional teams or exploring new tools on my own, 
           I’m driven by a passion for creating user-focused solutions that make a real impact.
           </div>
+          <div id="seeking">
+          I am currently seeking Fall 2025 internships in SWE and new grad roles for late 2026.
+          </div>
         </div>
       </div>
         <div id="footer">
