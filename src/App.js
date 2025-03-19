@@ -1,6 +1,12 @@
 import pic from './resources/IMG_6762.jpg'
 import github from './resources/github.png'
 import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
+import resume from './resources/Mar2025u_Resume.pdf'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import './App.css';
 
 function App() {
@@ -25,8 +31,94 @@ function App() {
           I’m driven by a passion for creating user-focused solutions that make a real impact.
           </div>
           <div id="seeking">
-          I am currently seeking Fall 2025 internships in SWE and new grad roles for late 2026.
+            I am currently seeking Fall 2025 internships in SWE and new grad roles for late 2026.
           </div>
+          <section id="resume" style={{ textAlign: 'center', marginTop: '40px' }}>
+          <h2>Resume</h2>
+          <button className="resume-button">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              View Resume
+            </a>
+          </button>
+        </section>
+          <div id="previously">
+            I previously worked at...
+          </div>
+        </div>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
+            <h3 className="vertical-timeline-element-title">Teranet</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Software Developer
+            </h4>
+            <p>
+              January 2024 - April 2024
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
+            <h3 className="vertical-timeline-element-title">Teranet</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Full Stack Developer
+            </h4>
+            <p>
+            January 2023 - April 2023
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+        <div id="education">
+          My Education:
+        </div>
+        <VerticalTimeline>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
+            <h3 className="vertical-timeline-element-title">Univeristy of Waterloo</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Computer Science
+            </h4>
+            <p>
+              2021 - 2026
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
+            <h3 className="vertical-timeline-element-title">Earl Haig Secondary School</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              High School (with French Certificate)
+            </h4>
+            <p>
+            2017 - 2021
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+        <div id="info">
+          In my free time I like to:
+            <p>⚽️ Play soccer</p>
+            <p>📺 Watch live sports</p>
+            <p>☀️ Hangout with friends and family</p>
+            <p>📈 Try not to lose all my money investing in stocks</p>
+        </div>
+        <div id="emailText">
+          Feel free to reach out at <a className="emailLink" href='mailto:smeydans@uwaterloo.ca'>smeydans@uwaterloo.ca</a> :)
         </div>
       </div>
         <div id="footer">

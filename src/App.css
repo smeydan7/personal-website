@@ -95,6 +95,66 @@
 
 #seeking {
   font-weight: bold;
+  gap: 2vh;
+}
+
+#previously, #education {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.resume-button {
+  background-color: floralwhite;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: calc(10px + 1vmin);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+  margin-bottom: 50px;
+}
+
+.resume-button:hover {
+  background-color: #21a1f1;
+}
+
+.resume-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-button a:visited {
+  color: inherit;
+}
+
+/* Parent container styling */
+#emailText {
+  max-width: 70ch;         
+  margin: 40px;         
+  line-height: 1.6;
+  font-size: calc(10px + 1vmin);
+  text-align: center;          
+  padding: 0 20px;    
+  color: white;       
+}
+
+/* Link styling */
+.emailLink {
+  color: #82caff;
+  text-decoration: underline; 
+}
+
+.emailLink:hover {
+  color: #b2dcff;
+}
+
+.emailLink:visited {
+  color: #82caff;
 }
 
 /* Footer */
