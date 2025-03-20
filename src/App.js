@@ -1,4 +1,4 @@
-import pic from './resources/IMG_6762.jpg'
+import pic from './resources/1-cb2185ca.jpg'
 import github from './resources/github.png'
 import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
 import resume from './resources/Mar2025u_Resume.pdf'
