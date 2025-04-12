@@ -1,7 +1,8 @@
-import pic from './resources/1-cb2185ca.jpg'
+// import pic from './resources/1-cb2185ca.jpg'
+import pic from './resources/Headshot.png'
 import github from './resources/github.png'
 import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
-import resume from './resources/Apr2025_Resume.pdf'
+import resume from './resources/AprU2025_Resume.pdf'
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -52,6 +53,20 @@ function App() {
             contentStyle={{ background: '#fff', color: '#000' }}
             contentArrowStyle={{ borderRight: '7px solid #fff' }}
           >
+            <h3 className="vertical-timeline-element-title">Payments Canada</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Software Developer
+            </h4>
+            <p>
+              May 2025 - Present
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
             <h3 className="vertical-timeline-element-title">Teranet</h3>
             <h4 className="vertical-timeline-element-subtitle">
               Software Developer
@@ -69,7 +84,7 @@ function App() {
           >
             <h3 className="vertical-timeline-element-title">Teranet</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Full Stack Developer
+              Software Engineer
             </h4>
             <p>
             January 2023 - April 2023
@@ -118,7 +133,7 @@ function App() {
             <p>📈 Try not to lose all my money investing in stocks</p>
         </div>
         <div id="emailText">
-          Feel free to reach out at <a className="emailLink" href='mailto:smeydans@uwaterloo.ca'>smeydans@uwaterloo.ca</a> :)
+          Feel free to reach out at <a className="emailLink" href='mailto:smeydans@uwaterloo.ca'>smeydans@uwaterloo.ca</a> 😃
         </div>
       </div>
         <div id="footer">
