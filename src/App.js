@@ -58,7 +58,7 @@ function App() {
               Software Developer
             </h4>
             <p>
-              May 2025 - Present
+              May 2025 - August 2025
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
