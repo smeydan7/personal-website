@@ -2,7 +2,7 @@
 import pic from './resources/Headshot.png'
 import github from './resources/github.png'
 import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
-import resume from './resources/August2025_Resume.pdf'
+import resume from './resources/Sept2025_Resume.pdf'
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -32,7 +32,7 @@ function App() {
           I’m driven by a passion for creating user-focused solutions that make a real impact.
           </div>
           <div id="seeking">
-            I am currently seeking Fall 2025 internships in SWE and new grad roles for late 2026.
+            I am currently seeking 2026 internships in SWE and new grad roles for late 2026.
           </div>
           <section id="resume" style={{ textAlign: 'center', marginTop: '40px' }}>
           <h2>Resume</h2>
