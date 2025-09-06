@@ -26,10 +26,11 @@ function App() {
         </header>
         <div id="main">
           <div id="info">
-          I’m a 4th year Computer Science student at the University of Waterloo with real-world experience building full-stack applications. 
-          I’m passionate about leveraging cutting-edge technologies to solve complex problems and create user-focused solutions.
-          Whether it’s collaborating on cross-functional teams or exploring new tools on my own, 
-          I’m driven by a passion for creating user-focused solutions that make a real impact.
+          I’m a 4th year Computer Science student at the University of Waterloo with experience building software 
+          used by financial institutions, real estate professionals, and everyday users. My work spans from optimizing 
+          large scale payment systems at Payments Canada to developing full stack apps and AI driven tools, with a focus 
+          on creating reliable, intuitive, and impactful technology. I thrive both in collaborative teams and working 
+          independently, and I’m driven to do well and make a real impact wherever I contribute.
           </div>
           <div id="seeking">
             I am currently seeking 2026 internships in SWE and new grad roles for late 2026.
