@@ -48,6 +48,20 @@ function App() {
           </div>
         </div>
         <VerticalTimeline>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{ background: '#f76c6c', color: '#fff' }}
+            contentStyle={{ background: '#fff', color: '#000' }}
+            contentArrowStyle={{ borderRight: '7px solid #fff' }}
+          >
+            <h3 className="vertical-timeline-element-title">wat.ai</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Machine Learning Engineer
+            </h4>
+            <p>
+              September 2025 - Present
+            </p>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={{ background: '#f76c6c', color: '#fff' }}
