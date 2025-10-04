@@ -2,7 +2,7 @@
 import pic from './resources/Headshot.png'
 import github from './resources/github.png'
 import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
-import resume from './resources/Sept2025_Resume.pdf'
+import resume from './resources/Oct2025_Resume.pdf'
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -44,7 +44,7 @@ function App() {
           </button>
         </section>
           <div id="previously">
-            I previously worked at...
+            I've worked at...
           </div>
         </div>
         <VerticalTimeline>
