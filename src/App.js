@@ -1,6 +1,5 @@
-
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import pic from "./resources/Headshot.png";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
@@ -37,8 +36,20 @@ function Card({ title, sub, date, children }) {
 }
 
 export default function App() {
+  const [dark, setDark] = useState(
+    () => window.matchMedia("(prefers-color-scheme: light)").matches
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+  }, [dark]);
+
   return (
     <div className="site">
+      {/* ----------  TOGGLE  ---------- */}
+      <button className="themeToggle" onClick={() => setDark((d) => !d)} aria-label="Toggle theme">
+        {dark ? "☀️" : "🌙"}
+      </button>
       {/* ------- HERO ------- */}
     <header className="hero">
       <motion.h1
