@@ -1,161 +1,144 @@
-// import pic from './resources/1-cb2185ca.jpg'
-import pic from './resources/Headshot.png'
-import github from './resources/github.png'
-import linkedin from './resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png'
-import resume from './resources/Oct2025_Resume.pdf'
-import {
-  VerticalTimeline,
-  VerticalTimelineElement
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import './App.css';
 
-function App() {
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import pic from "./resources/Headshot.png";
+import github from "./resources/github.png";
+import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
+import resume from "./resources/Oct2025_Resume.pdf";
+import "./App.css";
+
+const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
+
+function Section({ children }) {
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   return (
-    <div className="App">
-      <div id="container">
-        <header className="App-header">
-          <h1>Hi, I'm Sam Meydanshahi 👋🏽</h1>
-            <div id="bio">
-              <img src={pic} alt="Sam Meydanshahi" className="profile-photo"/>
-            </div>
-            <div id="icons">
-              <button><img src={github} alt=""/><a href='https://github.com/smeydan7'>GitHub</a></button>
-              <button><img src={linkedin} alt="" /><a href='https://www.linkedin.com/in/sam-meydanshahi/'>LinkedIn</a></button>
-            </div>
-        </header>
-        <div id="main">
-          <div id="info">
-          I’m a 4th year Computer Science student at the University of Waterloo with experience building software 
-          used by financial institutions, real estate professionals, and everyday users. My work spans from optimizing 
-          large scale payment systems at Payments Canada to developing full stack apps and AI driven tools, with a focus 
-          on creating reliable, intuitive, and impactful technology. I thrive both in collaborative teams and working 
-          independently, and I’m driven to do well and make a real impact wherever I contribute.
-          </div>
-          <div id="seeking">
-            I am currently seeking 2026 internships in SWE and new grad roles for late 2026.
-          </div>
-          <section id="resume" style={{ textAlign: 'center', marginTop: '40px' }}>
-          <h2>Resume</h2>
-          <button className="resume-button">
-            <a href={resume} target="_blank" rel="noopener noreferrer">
-              View Resume
-            </a>
-          </button>
-        </section>
-          <div id="previously">
-            I've worked at...
-          </div>
-        </div>
-        <VerticalTimeline>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">wat.ai</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Machine Learning Engineer
-            </h4>
-            <p>
-              September 2025 - Present
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Payments Canada</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Software Developer
-            </h4>
-            <p>
-              May 2025 - August 2025
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Teranet</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Software Developer
-            </h4>
-            <p>
-              January 2024 - April 2024
-            </p>
-          </VerticalTimelineElement>
+    <motion.div
+      ref={ref}
+      variants={fadeIn}
+      initial="hidden"
+      animate={isInView ? "show" : "hidden"}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Teranet</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Software Engineer
-            </h4>
-            <p>
-            January 2023 - April 2023
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
-        <div id="education">
-          My Education:
-        </div>
-        <VerticalTimeline>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Univeristy of Waterloo</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Computer Science
-            </h4>
-            <p>
-              2021 - 2026
-            </p>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: '#f76c6c', color: '#fff' }}
-            contentStyle={{ background: '#fff', color: '#000' }}
-            contentArrowStyle={{ borderRight: '7px solid #fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Earl Haig Secondary School</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              High School (with French Certificate)
-            </h4>
-            <p>
-            2017 - 2021
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
-        <div id="info">
-          In my free time I like to:
-            <p>⚽️ Play soccer</p>
-            <p>📺 Watch live sports</p>
-            <p>☀️ Hangout with friends and family</p>
-            <p>📈 Try not to lose all my money investing in stocks</p>
-        </div>
-        <div id="emailText">
-          Feel free to reach out at <a className="emailLink" href='mailto:smeydans@uwaterloo.ca'>smeydans@uwaterloo.ca</a> 😃
-        </div>
-      </div>
-        <div id="footer">
-          © 2025 - Sam Meydanshahi
-        </div>
+function Card({ title, sub, date, children }) {
+  return (
+    <div className="card">
+      <h3>{title}</h3>
+      <h4>{sub}</h4>
+      <p className="date">{date}</p>
+      {children && <div className="cardBody">{children}</div>}
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <div className="site">
+      {/* ------- HERO ------- */}
+    <header className="hero">
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        Hi, I'm Sam Meydanshahi 👋🏽
+      </motion.h1>
+
+      <motion.img
+        src={pic}
+        alt="Sam Meydanshahi"
+        className="avatar"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      />
+
+      <motion.div
+        className="socials"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4 }}
+      >
+        <a className="btn" href="https://github.com/smeydan7" target="_blank" rel="noreferrer">
+          <img src={github} alt="GitHub" className="btnIcon" />
+          GitHub
+        </a>
+        <a className="btn" href="https://linkedin.com/in/sam-meydanshahi" target="_blank" rel="noreferrer">
+          <img src={linkedin} alt="LinkedIn" className="btnIcon" />
+          LinkedIn
+        </a>
+      </motion.div>
+    </header>
+
+      {/* ------- ABOUT ------- */}
+      <Section>
+        <div className="textBlock tight">
+          <p>
+            I’m a 4th year Computer Science student at the University of Waterloo with experience building software
+            used by financial institutions, real estate professionals, and everyday users. My work spans from optimizing
+            large scale payment systems at Payments Canada to developing full stack apps and AI driven tools, with a focus
+            on creating reliable, intuitive, and impactful technology. I thrive both in collaborative teams and working
+            independently, and I’m driven to do well and make a real impact wherever I contribute.
+          </p>
+          <p className="highlight">I am currently seeking 2026 internships in SWE and new grad roles for late 2026.</p>
+        </div>
+      </Section>
+
+      {/* ------- RESUME ------- */}
+      <Section>
+        <div className="center">
+          <a className="btn primary" href={resume} target="_blank" rel="noreferrer">
+            View Résumé
+          </a>
+        </div>
+      </Section>
+
+      {/* ------- EXPERIENCE ------- */}
+      <Section>
+        <h2>I've worked at…</h2>
+        <div className="grid">
+          <Card title="wat.ai" sub="Machine Learning Engineer" date="Sep 2025 – Present" />
+          <Card title="Payments Canada" sub="Software Developer" date="May 2025 – Aug 2025" />
+          <Card title="Teranet" sub="Software Developer" date="Jan 2024 – Apr 2024" />
+          <Card title="Teranet" sub="Software Engineer" date="Jan 2023 – Apr 2023" />
+        </div>
+      </Section>
+
+      {/* ------- EDUCATION ------- */}
+      <Section>
+        <h2>Education</h2>
+        <div className="grid">
+          <Card title="University of Waterloo" sub="Bachelor of Computer Science" date="2021 – 2026" />
+          <Card title="Earl Haig Secondary School" sub="High School (French Certificate)" date="2017 – 2021" />
+        </div>
+      </Section>
+
+      {/* ------- FUN ------- */}
+      <Section>
+        <div className="textBlock">
+          <h2>In my free time I like to:</h2>
+          <ul className="funList">
+            <li>⚽️ Play soccer</li>
+            <li>📺 Watch live sports</li>
+            <li>☀️ Hangout with friends and family</li>
+            <li>📈 Try not to lose all my money investing in stocks</li>
+          </ul>
+        </div>
+      </Section>
+
+      {/* ------- FOOTER ------- */}
+      <footer>
+        Feel free to reach out at{" "}
+        <a className="emailLink" href="mailto:smeydans@uwaterloo.ca">
+          smeydans@uwaterloo.ca
+        </a>{" "}
+        😃
+      </footer>
+    </div>
+  );
+}
