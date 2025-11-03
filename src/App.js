@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import pic from "./resources/Headshot.png";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
-import resume from "./resources/Oct2025_Resume.pdf";
+import resume from "./resources/Nov2025_Resume.pdf";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
