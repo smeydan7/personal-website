@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import pic from "./resources/Headshot.png";
+import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
 import resume from "./resources/Nov2025_Resume.pdf";
