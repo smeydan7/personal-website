@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
-import resume from "./resources/Dec2025_Resume.pdf";
+import resume from "./resources/Jan2026_Resume.pdf";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
@@ -113,10 +113,10 @@ export default function App() {
       <Section>
         <h2>I've worked at…</h2>
         <div className="grid">
-          <Card title="wat.ai" sub="Machine Learning Engineer" date="Sep 2025 – Present" />
-          <Card title="Payments Canada" sub="Software Developer" date="May 2025 – Aug 2025" />
-          <Card title="Teranet" sub="Software Developer" date="Jan 2024 – Apr 2024" />
-          <Card title="Teranet" sub="Software Engineer" date="Jan 2023 – Apr 2023" />
+          <Card title="Tenstorrent" sub="Acceleration Kernel Developer Intern" date="Jan 2026 – Present" />
+          <Card title="Payments Canada" sub="Software Developer Intern" date="May 2025 – Aug 2025" />
+          <Card title="Teranet" sub="Software Developer Intern" date="Jan 2024 – Apr 2024" />
+          <Card title="Teranet" sub="Software Engineer Intern" date="Jan 2023 – Apr 2023" />
         </div>
       </Section>
 
