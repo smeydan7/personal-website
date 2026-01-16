@@ -90,11 +90,9 @@ export default function App() {
       <Section>
         <div className="textBlock tight">
           <p>
-            I’m a 4th year Computer Science student at the University of Waterloo with experience building software
-            used by financial institutions, real estate professionals, and everyday users. My work spans from optimizing
-            large scale payment systems at Payments Canada to developing full stack apps and AI driven tools, with a focus
-            on creating reliable, intuitive, and impactful technology. I thrive both in collaborative teams and working
-            independently, and I’m driven to do well and make a real impact wherever I contribute.
+          I’m a 4th year Computer Science student at the University of Waterloo, currently focused on AI hardware and software at Tenstorrent. 
+          My background includes optimizing large-scale payment systems at Payments Canada and building full-stack, and built full-stack apps 
+          in diverse industries.
           </p>
           <p className="highlight">I am currently seeking 2026 internships in SWE and new grad roles for late 2026.</p>
         </div>
@@ -113,7 +111,7 @@ export default function App() {
       <Section>
         <h2>I've worked at…</h2>
         <div className="grid">
-          <Card title="Tenstorrent" sub="Acceleration Kernel Developer Intern" date="Jan 2026 – Present" />
+          <Card title="Tenstorrent" sub="Kernel Developer Intern" date="Jan 2026 – Present" />
           <Card title="Payments Canada" sub="Software Developer Intern" date="May 2025 – Aug 2025" />
           <Card title="Teranet" sub="Software Developer Intern" date="Jan 2024 – Apr 2024" />
           <Card title="Teranet" sub="Software Engineer Intern" date="Jan 2023 – Apr 2023" />
