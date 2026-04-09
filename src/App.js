@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
-import resume from "./resources/Mar2026_Resume.pdf";
+import resume from "./resources/Apr2026_Resume.pdf";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
@@ -90,11 +90,11 @@ export default function App() {
       <Section>
         <div className="textBlock tight">
           <p>
-          I’m a 4th year Computer Science student at the University of Waterloo, currently focused on AI hardware and software at Tenstorrent. 
-          My background includes optimizing large-scale payment systems at Payments Canada and building full-stack, and built full-stack apps 
-          in diverse industries.
+          I'm a 4th year Computer Science student at the University of Waterloo, currently focused on AI hardware and software at Tenstorrent. 
+          My background spans optimizing high-scale payment systems at Payments Canada to engineering full-stack applications at Teranet. I'm 
+          eager to apply this expertise to new, impactful challenges!
           </p>
-          <p className="highlight">I am currently seeking 2026 internships in SWE/AI and new grad roles for late 2026.</p>
+          <p className="highlight">I am currently seeking 2026 internships in SWE/AI and new grad roles for early 2027.</p>
         </div>
       </Section>
 
@@ -111,10 +111,10 @@ export default function App() {
       <Section>
         <h2>I've worked at…</h2>
         <div className="grid">
-          <Card title="Tenstorrent" sub="Kernel Developer Intern" date="Jan 2026 – Present" />
-          <Card title="Payments Canada" sub="Software Developer Intern" date="May 2025 – Aug 2025" />
-          <Card title="Teranet" sub="Software Developer Intern" date="Jan 2024 – Apr 2024" />
-          <Card title="Teranet" sub="Software Engineer Intern" date="Jan 2023 – Apr 2023" />
+          <Card title="Tenstorrent" sub="Software Engineer Intern" date="Jan 2026 - Present" />
+          <Card title="Payments Canada" sub="Software Developer Intern" date="May 2025 - Aug 2025" />
+          <Card title="Teranet" sub="Software Developer Intern" date="Jan 2024 - Apr 2024" />
+          <Card title="Teranet" sub="Software Engineer Intern" date="Jan 2023 - Apr 2023" />
         </div>
       </Section>
 
@@ -122,8 +122,8 @@ export default function App() {
       <Section>
         <h2>Education</h2>
         <div className="grid">
-          <Card title="University of Waterloo" sub="Bachelor of Computer Science" date="2021 – 2026" />
-          <Card title="Earl Haig Secondary School" sub="High School (French Certificate)" date="2017 – 2021" />
+          <Card title="University of Waterloo" sub="Bachelor of Computer Science" date="2021 - 2026" />
+          <Card title="Earl Haig Secondary School" sub="High School (French Certificate)" date="2017 - 2021" />
         </div>
       </Section>
 
