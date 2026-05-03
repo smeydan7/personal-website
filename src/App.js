@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
-import resume from "./resources/Apr2026_Resume.pdf";
+import resume from "./resources/May2026_Resume.pdf";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
@@ -94,7 +94,7 @@ export default function App() {
           My background spans optimizing high-scale payment systems at Payments Canada to engineering full-stack applications at Teranet. I'm 
           eager to apply this expertise to new, impactful challenges!
           </p>
-          <p className="highlight">I am currently seeking 2026 internships in SWE/AI and new grad roles for early 2027.</p>
+          <p className="highlight">I am currently seeking new grad roles for early 2027.</p>
         </div>
       </Section>
 
