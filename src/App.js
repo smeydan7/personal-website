@@ -4,6 +4,9 @@ import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
 import resume from "./resources/May2026_Resume.pdf";
+import logoTenstorrent from "./resources/64161552.jpeg";
+import logoPaymentsCanada from "./resources/unnamed.jpg";
+import logoTeranet from "./resources/teranet_inc_logo.jpeg";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
@@ -24,12 +27,29 @@ function Section({ children }) {
   );
 }
 
-function Card({ title, sub, date, children }) {
+function Card({ title, sub, date, logo, companyUrl, children }) {
+  const titleEl = companyUrl ? (
+    <a className="cardCompanyLink" href={companyUrl} target="_blank" rel="noopener noreferrer">
+      {title}
+    </a>
+  ) : (
+    <h3>{title}</h3>
+  );
+
   return (
     <div className="card">
-      <h3>{title}</h3>
-      <h4>{sub}</h4>
-      <p className="date">{date}</p>
+      <div className="cardTop">
+        {logo ? (
+          <div className="cardLogoWrap">
+            <img src={logo} alt={`${title} logo`} />
+          </div>
+        ) : null}
+        <div className="cardHeadings">
+          {titleEl}
+          <h4>{sub}</h4>
+          <p className="date">{date}</p>
+        </div>
+      </div>
       {children && <div className="cardBody">{children}</div>}
     </div>
   );
@@ -111,10 +131,34 @@ export default function App() {
       <Section>
         <h2>I've worked at…</h2>
         <div className="grid">
-          <Card title="Tenstorrent" sub="Software Engineer Intern" date="Jan 2026 - Present" />
-          <Card title="Payments Canada" sub="Software Developer Intern" date="May 2025 - Aug 2025" />
-          <Card title="Teranet" sub="Software Developer Intern" date="Jan 2024 - Apr 2024" />
-          <Card title="Teranet" sub="Software Engineer Intern" date="Jan 2023 - Apr 2023" />
+          <Card
+            title="Tenstorrent"
+            sub="Software Engineer Intern"
+            date="Jan 2026 - Present"
+            logo={logoTenstorrent}
+            companyUrl="https://tenstorrent.com/en"
+          />
+          <Card
+            title="Payments Canada"
+            sub="Software Developer Intern"
+            date="May 2025 - Aug 2025"
+            logo={logoPaymentsCanada}
+            companyUrl="https://www.payments.ca/"
+          />
+          <Card
+            title="Teranet"
+            sub="Software Developer Intern"
+            date="Jan 2024 - Apr 2024"
+            logo={logoTeranet}
+            companyUrl="https://www.teranet.ca/"
+          />
+          <Card
+            title="Teranet"
+            sub="Software Engineer Intern"
+            date="Jan 2023 - Apr 2023"
+            logo={logoTeranet}
+            companyUrl="https://www.teranet.ca/"
+          />
         </div>
       </Section>
 

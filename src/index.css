@@ -184,9 +184,53 @@ code {
   border: 1px solid var(--cardBorder);
   min-width: 0;
 }
+.cardTop {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.cardHeadings {
+  flex: 1;
+  min-width: 0;
+}
+.cardLogoWrap {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  /* Hairline white ring (reads thinner than 1px border on many displays) */
+  box-shadow: 0 0 0 0.5px #fff;
+  background: color-mix(in srgb, var(--fg) 8%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.cardLogoWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 0;
+  vertical-align: middle;
+}
 .card h3 {
   margin: 0 0 4px;
   font-size: 1.1rem;
+}
+.cardCompanyLink {
+  display: inline-block;
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--fg) 42%, transparent);
+  text-underline-offset: 3px;
+}
+.cardCompanyLink:hover {
+  text-decoration-color: color-mix(in srgb, var(--fg) 70%, transparent);
 }
 .card h4 {
   margin: 0 0 8px;
