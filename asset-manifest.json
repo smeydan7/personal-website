@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b809805.css",
-    "main.js": "/static/js/main.d597c89b.js",
+    "main.css": "/static/css/main.a6896dcf.css",
+    "main.js": "/static/js/main.e630386d.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/DSC_0470.JPG": "/static/media/DSC_0470.a63289605df7e4933667.JPG",
     "static/media/May2026_Resume.pdf": "/static/media/May2026_Resume.e7141efca3892a4b7b83.pdf",
+    "static/media/unnamed.jpg": "/static/media/unnamed.3692f83e17a8de6b230c.jpg",
     "static/media/hd-square-black-outline-linkedin-icon-png-ziiy18li.png": "/static/media/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.7d00c72bed4cdb8a715a.png",
     "index.html": "/index.html",
-    "main.7b809805.css.map": "/static/css/main.7b809805.css.map",
-    "main.d597c89b.js.map": "/static/js/main.d597c89b.js.map",
+    "main.a6896dcf.css.map": "/static/css/main.a6896dcf.css.map",
+    "main.e630386d.js.map": "/static/js/main.e630386d.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b809805.css",
-    "static/js/main.d597c89b.js"
+    "static/css/main.a6896dcf.css",
+    "static/js/main.e630386d.js"
   ]
 }
