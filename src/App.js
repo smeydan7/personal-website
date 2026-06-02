@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
-import resume from "./resources/May2026_Resume.pdf";
+import resume from "./resources/June2026_Resume.pdf";
 import logoTenstorrent from "./resources/64161552.jpeg";
 import logoPaymentsCanada from "./resources/unnamed.jpg";
 import logoTeranet from "./resources/teranet_inc_logo.jpeg";
