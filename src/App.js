@@ -140,14 +140,14 @@ export default function App() {
           />
           <Card
             title="Payments Canada"
-            sub="Software Developer Intern"
+            sub="Software Engineer Intern"
             date="May 2025 - Aug 2025"
             logo={logoPaymentsCanada}
             companyUrl="https://www.payments.ca/"
           />
           <Card
             title="Teranet"
-            sub="Software Developer Intern"
+            sub="Software Engineer Intern"
             date="Jan 2024 - Apr 2024"
             logo={logoTeranet}
             companyUrl="https://www.teranet.ca/"
