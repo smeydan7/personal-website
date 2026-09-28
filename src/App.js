@@ -7,6 +7,8 @@ import resume from "./resources/Sept2026_SWE_Resume.pdf";
 import logoTenstorrent from "./resources/64161552.jpeg";
 import logoPaymentsCanada from "./resources/unnamed.jpg";
 import logoTeranet from "./resources/teranet_inc_logo.jpeg";
+import logoUW from "./resources/University_of_Waterloo_seal.svg";
+import logoEHSS from "./resources/EHSS_Crest.png";
 import "./App.css";
 
 const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
@@ -167,8 +169,20 @@ export default function App() {
       <Section>
         <h2>Education</h2>
         <div className="grid">
-          <Card title="University of Waterloo" sub="Bachelor of Computer Science" date="2021 - 2026" />
-          <Card title="Earl Haig Secondary School" sub="High School (French Certificate)" date="2017 - 2021" />
+          <Card 
+            title="University of Waterloo" 
+            sub="Bachelor of Computer Science" 
+            date="2021 - 2026" 
+            companyUrl="https://cs.uwaterloo.ca"
+            logo={logoUW}
+          />
+          <Card 
+            title="Earl Haig Secondary School" 
+            sub="High School (French Certificate)" 
+            date="2017 - 2021" 
+            companyUrl="https://earlhaig.ca/main.php"
+            logo={logoEHSS}  
+          />
         </div>
       </Section>
 
