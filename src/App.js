@@ -1,5 +1,4 @@
-import { motion, useInView } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import pic from "./resources/DSC_0470.JPG";
 import github from "./resources/github.png";
 import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
@@ -11,22 +10,8 @@ import logoUW from "./resources/University_of_Waterloo_seal.svg";
 import logoEHSS from "./resources/EHSS_Crest.png";
 import "./App.css";
 
-const fadeIn = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } };
-
 function Section({ children }) {
-  const ref = useRef();
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  return (
-    <motion.div
-      ref={ref}
-      variants={fadeIn}
-      initial="hidden"
-      animate={isInView ? "show" : "hidden"}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div>{children}</div>;
 }
 
 function Card({ title, sub, date, logo, companyUrl, children }) {
@@ -74,29 +59,11 @@ export default function App() {
       </button>
       {/* ------- HERO ------- */}
     <header className="hero">
-      <motion.h1
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        Hi, I'm Sam Meydanshahi 👋🏽
-      </motion.h1>
+      <h1>Hi, I'm Sam Meydanshahi 👋🏽</h1>
 
-      <motion.img
-        src={pic}
-        alt="Sam Meydanshahi"
-        className="avatar"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-      />
+      <img src={pic} alt="Sam Meydanshahi" className="avatar" />
 
-      <motion.div
-        className="socials"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-      >
+      <div className="socials">
         <a className="btn" href="https://github.com/smeydan7" target="_blank" rel="noreferrer">
           <img src={github} alt="GitHub" className="btnIcon" />
           GitHub
@@ -105,7 +72,7 @@ export default function App() {
           <img src={linkedin} alt="LinkedIn" className="btnIcon" />
           LinkedIn
         </a>
-      </motion.div>
+      </div>
     </header>
 
       {/* ------- ABOUT ------- */}
