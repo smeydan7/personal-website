@@ -110,9 +110,10 @@ export default function App() {
       <Section>
         <div className="textBlock tight">
           <p>
-          I'm a 4th year Computer Science student at the University of Waterloo, currently focused on AI hardware and software at Tenstorrent. 
-          My background spans optimizing high-scale payment systems at Payments Canada to engineering full-stack applications at Teranet. I'm 
-          eager to apply this expertise to new, impactful challenges!
+          Computer Science student at the University of Waterloo in my final semester. 
+          I've worked across the stack, from low-level systems for AI accelerators at Tenstorrent, 
+          high-scale payment systems at Payments Canada, to full-stack applications at Teranet. 
+          I'm happy working at any layer, as long as the problem is challenging and impactful.
           </p>
           <p className="highlight">I am currently seeking new grad roles for early 2027.</p>
         </div>
