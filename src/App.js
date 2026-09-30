@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import pic from "./resources/DSC_0470.JPG";
-import github from "./resources/github.png";
-import linkedin from "./resources/hd-square-black-outline-linkedin-icon-png-7017516950455535cziiy18li.png";
+import pic from "./resources/headshot.JPG";
+import github from "./resources/logo-github.svg";
+import linkedin from "./resources/logo-linkedin.svg";
 import resume from "./resources/Sept2026_SWE_Resume.pdf";
-import logoTenstorrent from "./resources/64161552.jpeg";
-import logoPaymentsCanada from "./resources/unnamed.jpg";
-import logoTeranet from "./resources/teranet_inc_logo.jpeg";
-import logoUW from "./resources/University_of_Waterloo_seal.svg";
-import logoEHSS from "./resources/EHSS_Crest.png";
+import logoTenstorrent from "./resources/logo-tenstorrent.jpeg";
+import logoPaymentsCanada from "./resources/logo-payments.jpg";
+import logoTeranet from "./resources/logo-teranet.jpeg";
+import logoUW from "./resources/logo-uw.svg";
+import logoEHSS from "./resources/logo-ehss.png";
 import "./App.css";
 
 function Section({ children }) {
@@ -66,11 +66,9 @@ export default function App() {
       <div className="socials">
         <a className="btn" href="https://github.com/smeydan7" target="_blank" rel="noreferrer">
           <img src={github} alt="GitHub" className="btnIcon" />
-          GitHub
         </a>
         <a className="btn" href="https://linkedin.com/in/sam-meydanshahi" target="_blank" rel="noreferrer">
           <img src={linkedin} alt="LinkedIn" className="btnIcon" />
-          LinkedIn
         </a>
       </div>
     </header>
