@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import pic from "./resources/headshot.JPG";
 import github from "./resources/logo-github.svg";
 import linkedin from "./resources/logo-linkedin.svg";
-import resume from "./resources/Sept2026_SWE_Resume.pdf";
+import resume from "./resources/Oct2026_SWE_Resume.pdf";
 import logoTenstorrent from "./resources/logo-tenstorrent.jpeg";
 import logoPaymentsCanada from "./resources/logo-payments.jpg";
 import logoTeranet from "./resources/logo-teranet.jpeg";
