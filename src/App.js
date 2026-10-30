@@ -82,7 +82,6 @@ export default function App() {
           high-scale payment systems at Payments Canada, to full-stack applications at Teranet. 
           I'm happy working at any layer, as long as the problem is challenging and impactful.
           </p>
-          <p className="highlight">I am currently seeking new grad roles for early 2027.</p>
         </div>
       </Section>
 
