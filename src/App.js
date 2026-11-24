@@ -3,6 +3,7 @@ import pic from "./resources/headshot.JPG";
 import github from "./resources/logo-github.svg";
 import linkedin from "./resources/logo-linkedin.svg";
 import resume from "./resources/Nov2026_SWE_Resume.pdf";
+import logoNexthop from "./resources/logo-nexthop.jpeg";
 import logoTenstorrent from "./resources/logo-tenstorrent.jpeg";
 import logoPaymentsCanada from "./resources/logo-payments.jpg";
 import logoTeranet from "./resources/logo-teranet.jpeg";
@@ -14,7 +15,7 @@ function Section({ children }) {
   return <div>{children}</div>;
 }
 
-function Card({ title, sub, date, logo, companyUrl, children }) {
+function Card({ title, sub, date, logo, companyUrl, wide, children }) {
   const titleEl = companyUrl ? (
     <a className="cardCompanyLink" href={companyUrl} target="_blank" rel="noopener noreferrer">
       {title}
@@ -24,7 +25,7 @@ function Card({ title, sub, date, logo, companyUrl, children }) {
   );
 
   return (
-    <div className="card">
+    <div className={wide ? "card cardWide" : "card"}>
       <div className="cardTop">
         {logo ? (
           <div className="cardLogoWrap">
@@ -59,7 +60,7 @@ export default function App() {
       </button>
       {/* ------- HERO ------- */}
     <header className="hero">
-      <h1>Hi, I'm Sam Meydanshahi 👋🏽</h1>
+      <h1>Hi, I'm Sam 👋🏽</h1>
 
       <img src={pic} alt="Sam Meydanshahi" className="avatar" />
 
@@ -77,10 +78,10 @@ export default function App() {
       <Section>
         <div className="textBlock tight">
           <p>
-          Computer Science student at the University of Waterloo in my final semester. 
+          Working on networking infrastructure at Nexthop AI. Computer Science alumni from the University of Waterloo. 
           I've worked across the stack, from low-level systems for AI accelerators at Tenstorrent, 
           high-scale payment systems at Payments Canada, to full-stack applications at Teranet. 
-          I'm happy working at any layer, as long as the problem is challenging and impactful.
+          I enjoy working at any layer, as long as the problem is challenging & impactful.
           </p>
         </div>
       </Section>
@@ -96,8 +97,16 @@ export default function App() {
 
       {/* ------- EXPERIENCE ------- */}
       <Section>
-        <h2>I've worked at…</h2>
+        <h2>Experience</h2>
         <div className="grid">
+          <Card
+            wide
+            title="Nexthop AI"
+            sub="Member of Technical Staff"
+            date="Jan 2027 – Present"
+            logo={logoNexthop}
+            companyUrl="https://nexthop.ai/"
+          />
           <Card
             title="Tenstorrent"
             sub="Software Engineer Intern"
