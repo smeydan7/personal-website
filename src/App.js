@@ -78,10 +78,11 @@ export default function App() {
       <Section>
         <div className="textBlock tight">
           <p>
-          Working on networking infrastructure at Nexthop AI. Computer Science alumni from the University of Waterloo. 
-          I've worked across the stack, from low-level systems for AI accelerators at Tenstorrent, 
-          high-scale payment systems at Payments Canada, to full-stack applications at Teranet. 
-          I enjoy working at any layer, as long as the problem is challenging & impactful.
+          * Currently building networking infrastructure in Santa Clara at Nexthop AI<br/ >
+          * Computer Science alumni from the University of Waterloo<br/ >
+          * I've worked across the stack, from low-level systems for AI accelerators at Tenstorrent, <br/ >
+          high-scale payment systems at Payments Canada, to full-stack applications at Teranet<br/ >
+          * I enjoy working at any layer, as long as the problem is challenging and impactful
           </p>
         </div>
       </Section>
