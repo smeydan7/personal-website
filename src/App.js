@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import pic from "./resources/headshot.JPG";
+import pic from "./resources/headshotV2.png";
 import github from "./resources/logo-github.svg";
 import linkedin from "./resources/logo-linkedin.svg";
 import resume from "./resources/Nov2026_SWE_Resume.pdf";
